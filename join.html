@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>커플레이</title>
+</head>
+<body>
+    <h1 class="d-none">커플레이</h1>
+    <div class="header-top">
+        <a href="login.html">로그인</a>
+        <a href="register.html">회원가입</a>
+        <a href="cart.html">장바구니</a>
+        <a href="order.html">주문조회</a>
+    </div>
+    <header>                      
+        <div class="logo">
+            <img src="images/main-logo.png" alt="커플레이">
+        </div>
+        <nav class="main-nav">
+            <ul id="gnb"><!-- global navigation bar : 전역 메뉴 막대 -->
+                <li><a href="shopping.html">shopping</a></li>
+                <li><a href="sales.html">sales</a></li>
+                <li><a href="event.html">event</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-title">
+        <h2>join</h2>
+        <p>회원가입</p>
+    </div>
+    <section>
+        <h2 class="d-none">회원가입 폼</h2>
+        <article>
+            <h3 class="d-none">가입구분</h3>
+            <form autocomplete="off">
+                <fieldset>
+                    <legend class="d-none">가입구분</legend>                    
+                    <table class="type_tbl">
+                        <caption>가입구분</caption>
+                        <tr>
+                            <th class="bt-2">회원구분</th>
+                            <td class="bt-2">
+                                <input type="radio" id="private" checked name="member_type">
+                                <label for="private">개인회원</label>
+                                <input type="radio" id="radio" name="member_type">
+                                <label for="biz">사업자회원</label>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend class="d-none">기본정보</legend>
+                    <table class="user_tbl">
+                        <caption>기본정보</caption>
+                        <tr>
+                            <th class="bt-2">아이디</th>
+                            <td class="bt-2">
+                                <label for="u_id" class="screen_out">아이디</label>
+                                <input type="text" id="u_id" name="u_id" maxlength="16" placeholder="이메일 주소 형식">
+                                (숫자, 문자, 기호 포함 12자 까지)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td>
+                                <label for="u_pw" class="screen_out">비밀번호</label>
+                                <input type="password" id="u_pw" maxlength="16" name="u_pw" placeholder="숫자,문자,기호 포함 16자 이내">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이름</th>
+                            <td>
+                                <label for="u_name" class="screen_out">이름</label>
+                                <input type="text" id="u_name" maxlength="20" name="u_name" maxlength="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>연락처</th>
+                            <td>
+                                <label for="u_phone" class="screen_out">연락처</label>
+                                <select id="phone1">
+                                    <option value="">선택하세요</option>
+                                    <option value="02">02</option>
+                                    <option value="062">062</option>
+                                    <option value="010">010</option>
+                                    <option value="070">070</option>
+                                    <option value="080">080</option>
+                                </select>
+                                -
+                                <input type="text" id="phone2" name="phone2" maxlength="4">
+                                -
+                                <input type="text" id="phone3" name="phone3" maxlength="4">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>SMS 수신여부</th>
+                            <td>
+                                <input type="checkbox" id="sms_ok" name="sms_ok">
+                                <label for="sms_ok">수신함</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>
+                                <label for="u_mail" class="screen_out">이메일</label>
+                                <input type="text" id="u_mail" name="u_mail" maxlength="20">
+                                @
+                                <input type="text" id="u_mail_domain" name="u_mail_domain" disabled>
+                                <select id="phone1">
+                                    <option value="xx">직접입력</option>
+                                    <option value="@naver.com">네이버</option>
+                                    <option value="@daum.net">다음</option>
+                                    <option value="@gmail.com">구글</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>프로필 사진</th>
+                            <td>
+                                <input type="text" disabled>
+                                <label for="u_avatar">찾아보기</label>
+                                <input type="file" id="u_avatar" name="u_avatar">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="btns">
+                        <button type="submit">가입</button>
+                        <button type="reset">취소</button>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+    <aside>
+        <div class="aside-wrap">
+            <a href="agree.html">이용약관</a>
+            <a href="privacy.html">개인정보취급방침</a>
+            <a href="guide.html">이용안내</a>
+            <a href="cs-center.html">이용안내</a>
+        </div>
+    </aside>
+    <footer>
+        <address>
+            <p>광주광역시 서구 경열로3, 커플레이</p>
+            <p>copyright&copy; 2017. couplay. all rights reserved.</p>
+        </address>
+    </footer>
+</body>
+</html>

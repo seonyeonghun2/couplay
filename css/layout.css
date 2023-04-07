@@ -1,0 +1,134 @@
+.d-none {
+    display: none
+}
+.logo {
+    width: 100px;
+    margin: 50px auto;
+}
+.header-top {
+    background:#f5f5f5;
+    padding: 10px 0;
+    font-size: 13px;
+    text-align: center;
+}
+.header-top a {
+    margin: 0 5px;
+}
+.header-top a:hover {
+    color: #F46800
+}
+#gnb {
+    display: flex;
+    justify-content: center
+}
+#gnb li {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+}
+#gnb a {
+    text-transform: uppercase;
+}
+#gnb li:hover {
+    background: #F46800;
+    color: white
+}
+.page-title {
+    background: #ff862a;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+    margin: 30px 0;
+    color: white;
+}
+.page-title h2 {
+    font-size: 40px;
+}
+.page-title p {
+    font-size: 16px;
+}
+
+.type_tbl, .user_tbl {
+    width: 800px;
+    margin: 30px auto;
+}
+
+table, th, td {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.bt-2 { /* border-top */
+    border-top-width: 2px;
+    border-top-color:#888888
+}
+caption {
+    font-size: 20px;
+    margin-bottom:10px
+}
+th {
+    background: #f5f5f5;
+    text-align: left;
+    text-indent: 20px;
+    width: 20%;
+    padding: 10px 0
+}
+td {
+    text-indent: 50px;
+    border-left: 1px solid #ccc
+}
+
+/* daum.net label 처리방법 */
+.screen_out {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left:100%;
+    overflow: hidden
+}
+[for=u_avatar] {
+    background:#F46800;
+    padding: 3px 5px;
+    color: white;
+    border-radius: 2px;
+}
+[type=file] {
+    width: 0;
+    height: 0
+}
+.btns {
+    text-align: center
+}
+[type=submit] {
+    background:#000;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+[type=reset] {
+    border: 2px solid #000;
+    width: 100px;
+    height: 40px;
+}
+aside {
+    background: #000;
+}
+.aside-wrap {
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin: 30px 0;
+    font-size: 14px;
+}
+/* .aside-wrap a {
+    margin:0 5px;
+} */
+.aside-wrap a::after { /* 가상 선택자 */
+    content: '|';
+    margin: 0 0 0 10px
+}
+.aside-wrap a:nth-child(4)::after{
+    content:'';
+}
+
+address p {
+    text-align: center;
+}
