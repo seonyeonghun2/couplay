@@ -23,14 +23,14 @@
     </div>
     <!-- /.header -->
     <div class="main">
-        <form>
+        <form method="post" action="http://localhost:3000/signup">
             <div class="join-type">
                 <table>
                     <tr>
                         <th>회원구분</th>
                         <td>
-                            <label><input type="radio" name="gubun" checked>개인회원</label>
-                            <label><input type="radio" name="gubun">사업자회원</label>
+                            <label><input type="radio" name="user_gubun" value="0" checked>개인회원</label>
+                            <label><input type="radio" name="user_gubun" value="1">사업자회원</label>
                         </td>
                     </tr><!-- table row: 행-->
                 </table>
@@ -40,43 +40,43 @@
                     <tr>
                         <th>아이디</th>
                         <td>
-                            <input type="text">
+                            <input type="text" name="user_id">
                         </td>
                     </tr>
                     <tr>
                         <th>비밀번호</th>
                         <td>
-                            <input type="password">
+                            <input type="password" name="user_pwd">
                         </td>
                     </tr>
                     <tr>
                         <th>이름</th>
                         <td>
-                            <input type="text">
+                            <input type="text" name="user_name">
                         </td>
                     </tr>
                     <tr>
                         <th>연락처</th>
                         <td>
-                            <input type="text">
+                            <input type="text" name="user_phone">
                         </td>
                     </tr>
                     <tr>
                         <th>sms수신여부</th>
                         <td>
-                            <input type="checkbox">
+                            <input type="checkbox" name="user_sms" value="yes" checked>
                         </td>
                     </tr>
                     <tr>
                         <th>이메일</th>
                         <td>
-                            <input type="email">
+                            <input type="email" name="user_email">
                         </td>
                     </tr>
                     <tr>
                         <th>파일첨부</th>
                         <td>
-                            <input type="file">
+                            <input type="file" name="user_file">
                         </td>
                     </tr>
                 </table>
