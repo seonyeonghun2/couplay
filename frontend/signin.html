@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>커플레이 - 회원 로그인</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="link-text">
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+          <a href="#">장바구니</a>
+          <a href="#">주문조회</a>
+      </div>
+      <div class="brand"><img src="images/logo.png" alt="couplay" /></div>
+      <div class="menu">
+          <a href="#">shopping</a>
+          <a href="#">sales</a>
+          <a href="#">event</a>
+      </div>
+      
+    </div>
+    <!-- /.header -->
+    <div class="main">
+        <form method="post" action="http://localhost:3000/signin">
+            <div class="login-type">
+                <table>
+                    <tr>
+                        <th>회원구분</th>
+                        <td>
+                            <label><input type="radio" name="user_gubun" value="0" checked>개인회원</label>
+                            <label><input type="radio" name="user_gubun" value="1">사업자회원</label>
+                        </td>
+                    </tr><!-- table row: 행-->
+                </table>
+            </div>
+            <div class="basic-info">
+                <table>
+                    <tr>
+                        <th>아이디</th>
+                        <td>
+                            <input type="text" name="user_id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td>
+                            <input type="password" name="user_pwd">
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="로그인">
+                <input type="reset" value="취소">
+            </div>
+        </form>
+    </div>
+    <!-- /.main -->
+    <div class="footer">
+        <div class="submenu">
+            <a href="#">이용약관</a>
+            <a href="#">이용약관</a>
+            <a href="#">이용약관</a>
+            <a href="#">이용약관</a>
+        </div>
+        <div class="site-info">
+            <p>광주 서구 경열로 3 (농성동 271-4), 커플레이</p>
+            <p>copyright&copy; 2024. <span class="owner">couplay</span>. all rights reserved</p>
+        </div>
+    </div>
+    <!-- /.footer -->
+  </body>
+</html>
