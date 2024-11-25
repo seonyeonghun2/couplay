@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>커플레이 - 회원가입</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="header">
@@ -58,13 +59,13 @@
                     <tr>
                         <th>연락처</th>
                         <td>
-                            <input type="text" name="user_phone">
+                            <input type="text" name="user_phone" maxlength="11">
                         </td>
                     </tr>
                     <tr>
                         <th>sms수신여부</th>
                         <td>
-                            <input type="checkbox" name="user_sms" value="yes" checked>
+                            <input type="checkbox" name="user_sms" value="y" checked>
                         </td>
                     </tr>
                     <tr>
@@ -73,12 +74,12 @@
                             <input type="email" name="user_email">
                         </td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <th>파일첨부</th>
                         <td>
                             <input type="file" name="user_file">
                         </td>
-                    </tr>
+                    </tr> -->
                 </table>
                 <input type="submit" value="가입">
                 <input type="reset" value="취소">
