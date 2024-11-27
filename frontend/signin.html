@@ -11,7 +11,7 @@
       <div class="link-text">
           <a href="#">로그인</a>
           <a href="#">회원가입</a>
-          <a href="#">장바구니</a>
+          <a href="http://localhost:3000/bucket">장바구니</a>
           <a href="#">주문조회</a>
       </div>
       <div class="brand"><img src="images/logo.png" alt="couplay" /></div>
@@ -20,13 +20,17 @@
           <a href="#">sales</a>
           <a href="#">event</a>
       </div>
-      
+      <div class="title">
+        <p class="text-big">login</p>
+        <p class="text-small">회원로그인</p>
+      </div>
     </div>
     <!-- /.header -->
     <div class="main">
-        <form method="post" action="http://localhost:3000/signin">
+        <form method="post" action="http://localhost:3000/signin" autocomplete="off" id="signin_form">
             <div class="login-type">
-                <table>
+                <table id="signin_table">
+                    <caption>가입구분</caption>
                     <tr>
                         <th>회원구분</th>
                         <td>

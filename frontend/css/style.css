@@ -3,6 +3,23 @@
     margin: 0;
     padding: 0
 }
+a, a:link {
+    color: inherit; /* 상위 요소의 색상을 상속받아서 사용 */
+    text-decoration: none
+}
+.menu {
+    display: flex;
+    justify-content: center;
+}
+.menu a {
+    border: 1px solid #ccc;
+    padding: 5px 10px;    
+    text-transform: uppercase
+}
+.menu a:hover {
+    background: black;
+    color: white
+}
 .header {
     font-size: 13px;
 }
@@ -11,8 +28,45 @@
     padding: 10px;
     text-align: center
 }
+.link-text a {
+    margin: 0 10px
+}
 .brand {
     width: 88px;
     height: 100px;
     margin: 20px auto
+}
+.title {
+    background-color: #ffea00; 
+    margin: 30px 0;
+    padding: 15px 0;
+    text-align: center   
+}
+.text-big {
+    font-size: 40px;
+    text-transform: uppercase
+}
+.text-small {
+    font-size: 16px
+}
+
+.main form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+#signin_table, #signup_table, .basic-info table {
+    width: 100%
+}
+caption {
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    padding: 10px 0
+}
+
+.submenu {
+    background-color: black;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 10px 0
 }

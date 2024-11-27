@@ -20,13 +20,17 @@
           <a href="#">sales</a>
           <a href="#">event</a>
       </div>
-      
+      <div class="title">
+        <p class="text-big">join</p>
+        <p class="text-small">회원가입</p>
+      </div>
     </div>
     <!-- /.header -->
     <div class="main">
-        <form method="post" action="http://localhost:3000/signup">
+        <form method="post" action="http://localhost:3000/signup" autocomplete="off" id="signup_form">
             <div class="join-type">
-                <table>
+                <table id="signup_table">
+                    <caption>가입구분</caption>
                     <tr>
                         <th>회원구분</th>
                         <td>
@@ -38,6 +42,7 @@
             </div>
             <div class="basic-info">
                 <table>
+                    <caption>기본정보</caption>
                     <tr>
                         <th>아이디</th>
                         <td>
